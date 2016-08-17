@@ -23,5 +23,19 @@
     <!-- ===============================================================================================================
         Constraints, Types, and Aspects go here...
         -->
-
+	<types>
+        <!--
+            Enterprise-wide Document root type
+        -->
+        <type name="myc:document">
+            <title>Base document type</title>
+            <parent>cm:content</parent>
+            <properties>
+                <property name="myc:documentId">
+                    <title>Document Identification Number</title>
+                    <type>d:text</type>
+                </property>
+            </properties>
+        </type>
+    </types>
 </model>
